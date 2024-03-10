@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>VivaAir - Venta de Boletos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row mb-4">
+            <div class="col">
+                <h2>VIVAAIR.COM</h2>
+            </div>
+            <div class="col">
+                <h2 class="text-right">VENTA DE BOLETOS</h2>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col">
+                <label for="ciudadOrigen">Ciudad de Origen:</label>
+                <input type="text" class="form-control" id="ciudadOrigen" name="ciudadOrigen">
+            </div>
+            <div class="col">
+                <label for="ciudadDestino">Ciudad de Destino:</label>
+                <input type="text" class="form-control" id="ciudadDestino" name="ciudadDestino">
+            </div>
+            <div class="col">
+                <label for="fechaSalida">Fecha de Salida:</label>
+                <input type="date" class="form-control" id="fechaSalida" name="fechaSalida">
+            </div>
+            <div class="col">
+                <label for="fechaRetorno">Fecha de Retorno:</label>
+                <input type="date" class="form-control" id="fechaRetorno" name="fechaRetorno">
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col">
+                <label for="nombreComprador">Nombre del Comprador:</label>
+                <input type="text" class="form-control" id="nombreComprador" name="nombreComprador">
+            </div>
+            <div class="col">
+                <label for="cantidad">Cantidad de Boletos:</label>
+                <input type="number" class="form-control" id="cantidad" name="cantidad" min="1">
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col">
+                <button type="button" class="btn btn-primary">Agregar</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-danger float-right">Limpiar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Ciudad de Origen</th>
+                            <th>Ciudad de Destino</th>
+                            <th>Fecha de Salida</th>
+                            <th>Fecha de Retorno</th>
+                            <th>Nombre del Comprador</th>
+                            <th>Cantidad de Boletos</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-danger btn-lg btn-block">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
